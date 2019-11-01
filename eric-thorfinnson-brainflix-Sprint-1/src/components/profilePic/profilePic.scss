@@ -1,0 +1,45 @@
+@import "../../styles/mixinsVars.scss";
+
+@include mobile-only(){
+
+    .profile-pic{
+        // border:1px solid black;
+        width:15%;
+        padding-bottom:34px;
+    }
+    .profile-pic__display{
+        border-radius: 50%;
+        height:41px;
+        width:41px;
+    }
+}
+
+@include tablet-only(){
+
+    .profile-pic{
+        // border:1px solid black;
+        display:flex;
+        width:5%;
+        margin-right:3%;
+    }
+    .profile-pic__display{
+
+        border-radius: 50%;
+        height:39px;
+        width:39px;
+    }
+}
+
+
+@include laptop-up(){
+
+    .profile-pic{
+        display:flex;
+        width:5%;
+    }
+    .profile-pic__display{
+        border-radius: 50%;
+        height:45px;
+        width:45px;
+    }
+}

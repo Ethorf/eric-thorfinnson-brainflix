@@ -1,0 +1,133 @@
+@import "../../styles/mixinsVars.scss";
+@import "../../assets/fonts.scss";
+
+
+@include mobile-only(){
+
+    .comment-display{
+        display:flex;
+        margin-top:24px;
+        border-bottom:1px solid silver;
+        padding-bottom:5px;
+        margin-left:3%;
+        margin-right:3%;
+
+        
+        &__name-date-content-container{
+            margin-left:3%;
+            width:75%;
+            // border:1px solid black;
+
+        }
+        &__name-date-container{
+            display:flex;
+            justify-content: space-between;
+            width:100%;
+            margin-bottom:5px;
+            // border:1px solid black;
+            
+        }
+
+        &__name{
+            font-size:0.9rem;
+
+        }
+
+        &__date{
+            color:$labelFontColour;
+            font-size:0.9rem;
+        }
+
+        &__content{
+            text-align: left;
+            font-size:$mobileParaCommentSize;
+        }
+        
+    }
+
+}
+
+@include tablet-only(){
+
+    .comment-display{
+        display:flex;
+        margin-top:24px;
+        border-bottom:1px solid silver;
+        padding-bottom:5px;
+        margin-left:3%;
+        margin-right:3%;
+
+        
+        &__name-date-content-container{
+            margin-left:3%;
+            width:75%;
+            // border:1px solid black;
+
+        }
+        &__name-date-container{
+            display:flex;
+            width:100%;
+            margin-bottom:5px;
+
+            
+        }
+
+        &__name{
+            font-size:0.9rem;
+            margin-right:16px;
+
+        }
+
+        &__date{
+            color:$labelFontColour;
+            font-size:0.9rem;
+        }
+
+        &__content{
+            text-align: left;
+            font-size:$mobileParaCommentSize;
+            padding-bottom:24px;
+        }
+    }
+}
+
+@include laptop-up(){
+
+    .comment-display{
+        display:flex;
+        margin-top:24px;
+        border-bottom:1px solid silver;
+        padding-bottom:5px;
+        width: 85%;         
+        margin-left:12%;
+        margin-right:3%;
+
+        
+        &__name-date-content-container{
+            margin-left:9%;
+            width:75%;
+        }
+        &__name-date-container{
+            display:flex;
+            width:100%;
+            margin-bottom:5px;
+        }
+
+        &__name{
+            font-size:0.9rem;
+            margin-right:16px;
+
+        }
+
+        &__date{
+            color:$labelFontColour;
+            font-size:0.9rem;
+        }
+
+        &__content{
+            text-align: left;
+            font-size:$mobileParaCommentSize;
+            padding-bottom:24px;
+        }
+    }
+}
