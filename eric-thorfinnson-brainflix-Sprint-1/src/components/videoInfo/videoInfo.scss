@@ -76,7 +76,6 @@
 }
 
 .videoInfo{
-
     @include tablet-only(){
 
         display:flex;
@@ -90,7 +89,6 @@
             margin-top:48px;
             margin-bottom:24px;
         }
-
         &__title{
             width:90%;
             font-size:2.1rem;
@@ -123,9 +121,10 @@
         }
         &__views-icon{
             margin-right:8px;
+            margin-left:3%;
         }
         &__views-number{
-            margin-right:4%;
+            margin-right:3%;
             font-size:1.1rem;
             font-weight:300;
         }
@@ -176,19 +175,24 @@
             padding-bottom:24px;
             border-bottom:1px solid silver;
         }
-
         &__authour-date-container{
             display:flex;
             align-items: center;
             width:50%;
+            margin-right:1%;
+
+
+
         }
 
         &__authour{
-            margin-right:8px;
+            margin-right:1%;
         }
 
         &__date{
             margin-top:1%;
+            margin-right:1%;
+
             color:$labelFontColour;
         }
         
@@ -197,15 +201,15 @@
             justify-content: flex-end;
             width:40%;
             margin-right:5%;
-
         }
-
         &__views-icon{
-            margin-right:8px;
+            margin-right:2%;
+            margin-left:2%;
+
         }
 
         &__views-number{
-            margin-right:4%;
+            margin-right:1%;
             font-size:1.1rem;
             font-weight:300;
         }

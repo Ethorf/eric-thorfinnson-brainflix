@@ -2,9 +2,6 @@ import React from 'react';
 import '../../App.scss';
 import '../../styles/mixinsVars.scss';
 import './videoPlaylist.scss';
-import thumb from "../../assets/Images/video-list-0.jpg"
-
-
 
 class VideoPlaylist extends React.Component {
 

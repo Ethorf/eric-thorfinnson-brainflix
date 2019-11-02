@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import './styles/mixinsVars.scss';
 import Header from './components/header.js'
@@ -100,6 +99,10 @@ class App extends React.Component {
     },
   ]
 
+  state={
+    videoThumbnailArr:this.videoThumbnailArr,
+    commentsArr:this.commentsArr
+  }
 
   commentMaker(arr){
     let jsx = [];
@@ -112,7 +115,7 @@ class App extends React.Component {
   videoPlaylistMaker(arr){
     let jsx = [];
     arr.forEach(function(vidPlayObj) {
-      if (vidPlayObj.thumbnail != videoThumbnail0){
+      if (vidPlayObj.thumbnail !== videoThumbnail0){
       jsx.push(<VideoPlaylist key={vidPlayObj.name+vidPlayObj.authour} name={vidPlayObj.name} authour={vidPlayObj.authour} thumbnail={vidPlayObj.thumbnail}/>)
       }
     ;
@@ -130,13 +133,13 @@ class App extends React.Component {
           <div className="App__info-content-container">
             < VideoInfo />
             <CommentInput />
-            {this.commentMaker(this.commentsArr)}
+            {this.commentMaker(this.state.commentsArr)}
           </div>
             <div className="App__playlist-container">
               <div className="video-playlist-header-container">
                 <h2 className="video-playlist-header-content">Next Video</h2>
               </div>
-              {this.videoPlaylistMaker(this.videoThumbnailArr)}  
+              {this.videoPlaylistMaker(this.state.videoThumbnailArr)}  
             </div>
           </div>
         </div>

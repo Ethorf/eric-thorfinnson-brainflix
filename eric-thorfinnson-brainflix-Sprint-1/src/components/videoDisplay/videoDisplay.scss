@@ -2,7 +2,6 @@
 @import "../../assets/fonts.scss";
 
 
-
 @include mobile-only(){
     .videoDisplay{
         &__video{
@@ -78,17 +77,19 @@
 @include tablet-only(){
     .videoDisplay{
         background-color:black;
-        height:400px;
+        height:385px;
 
         &__video{
             width:90%;
-            height:410px;
+            height:100%;
             z-index:1;
+            object-fit: initial;
         }
         &__controls-all-container{
             position:absolute;
             width:100%;
-            top:410px;;
+            right:2%;
+            top:420px;
         }
         &__controls-container{
             display:flex;
@@ -100,18 +101,18 @@
             background-color:black;
             opacity:70%;
             height:28px;                        
-            width:6%;
-            margin-left:7%;
+            width:8%;
+            margin-left:8%;
             z-index:2;
         }
         &__play-pause-button{
             z-index:3;
             background-color:black;
             padding-top:3px;
+            padding-bottom:3px;
         }
-
         &__playback-slider{
-            width:64%;
+            width:56%;
             border:1px solid black;
             border-radius:5px;
             background-color:black;
@@ -120,18 +121,20 @@
             margin-left:3%;
             z-index:2;
             padding:2px;
+
         }
         &__full-screen-volume-container{
-            width:10%;
+            width:20%;
             border:1px solid black;
             border-radius:5px;
             background-color:black;
             opacity:70%;
             height:28px;                        
-            margin-left:3%;
+            margin-left:2%;
             margin-right:4%;
             z-index:2;
             padding:5px 10px;
+            // border:1px solid white;
         }
         &__full-screen-button{
             background-color:black;
@@ -155,15 +158,16 @@
         background-color:black;
         
         &__video{
-            width:100%;
+            width:80%;
             height:100%;
             z-index:1;
+            object-fit: initial;
         }
         &__controls-all-container{
             position:absolute;
-            width:70%;
-            top:580px;
-            left:15%;
+            width:90%;
+            top:598px;
+            left:4%;
         }
         &__controls-container{
             display:flex;
@@ -175,9 +179,8 @@
             background-color:black;
             opacity:70%;
             height:28px;                        
-            width:6%;
-            margin-left:7%;
-
+            width:8%;
+            margin-left:8%;
             z-index:2;
         }
         &__play-pause-button{
@@ -187,7 +190,7 @@
         }
 
         &__playback-slider{
-            width:64%;
+            width:55%;
             border:1px solid black;
             border-radius:5px;
             background-color:black;
@@ -199,7 +202,7 @@
         }
 
         &__full-screen-volume-container{
-            width:10%;
+            width:15%;
             border:1px solid black;
             border-radius:5px;
             background-color:black;
