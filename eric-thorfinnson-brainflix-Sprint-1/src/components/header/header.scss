@@ -1,0 +1,387 @@
+@import "../../styles/mixinsVars.scss";
+@import "../../assets/fonts.scss";
+
+
+
+@include mobile-only(){
+  .header{
+    height:169px;
+
+    &__logo-container{
+      height:48px;
+      width:100%;
+      @include flex-center();
+    }
+
+    &__search-container{
+      @include flex-center();
+    }
+
+    &__search-box{
+      @include flex-center();
+      border:1px solid black;
+      height:48px;
+    }
+    &__upload-profile-pic-container{
+    display:flex;
+    justify-content: flex-start;
+    } 
+    &__upload-button{
+        width:72%;
+        @include flex-center();
+        background-color:$brainBlue;
+        margin-top:8px;
+        margin:8px 1% 16px 4%;
+        padding:5%;
+        font-size:0.8rem;
+        font-weight:700;
+        border-radius:4px;
+        color:white;
+    }
+    &__profile-pic-container{
+        @include flex-center();
+        width:20%;
+    }
+    &__profile-pic{
+        height:48px;
+        width:48px;
+        border:1px solid transparent;
+        border-radius:50%;
+        margin-bottom:5%;
+      }
+    &__search-all-container{
+       display:flex;
+       margin-left:4%;
+    }
+      &__search-container{
+        width:95%;
+        border:1px solid silver;
+        border-radius:5px;
+        color:#FAFAFA;
+        background-color:#FAFAFA;
+      }
+      &__search-box{
+        background-color:#FAFAFA;
+        border:none;
+        width:90%;
+      }
+
+      &__search-icon{
+        margin-right:3%;
+        margin-left:4%;
+      }
+    }
+}
+
+@include tablet-small(){
+
+  .header{
+    display:flex;
+    width:100%;
+    height:80px;
+    align-items:center;
+
+
+    &__logo-container{
+      height:80px;
+      width:20%;
+      @include flex-center();
+      margin-right:4%;
+      margin-left:6%;
+    }
+
+    &__search-all-container{
+      display:flex;
+      align-items:center;
+      margin-left:4%;
+      width:30%;
+      height:75%;
+
+   }
+ 
+     &__search-container{
+       @include flex-center();
+       border:1px solid silver;
+       border-radius:5px;
+       color:#FAFAFA;
+       background-color:#FAFAFA;
+       width:100%;
+       margin-right:4%;
+       height:80%;
+     }
+     &__search-box{
+       background-color:#FAFAFA;
+       border:none;
+       font-size:0.8rem;
+       width:80%;
+     }
+
+      &__upload-profile-pic-container{
+      display:flex;
+      height:75%;      
+      width:30%;
+      justify-content: flex-start;
+
+      align-items: center;
+
+      } 
+
+      &__upload-button{
+          width:68%;
+       height:80%;
+
+          @include flex-center();
+          background-color:$brainBlue;
+          padding:9% 12px;
+          font-size:0.7rem;
+          font-weight:700;
+          border-radius:4px;
+          color:white;
+          margin-right:8%;
+      }
+
+      &__profile-pic-container{
+          @include flex-center();
+          width:25%;
+      }
+
+      &__profile-pic{
+          height:41px;
+          width:41px;
+          border:1px solid transparent;
+          border-radius:50%;
+          margin-bottom:5%;
+          
+        }
+
+        &__search-icon{
+          margin-right:3%;
+          margin-left:5%;
+        }
+    }
+}
+
+@include tablet-only(){
+  .header{
+    display:flex;
+    width:100%;
+    height:80px;
+    align-items:center;
+
+
+    &__logo-container{
+      height:80px;
+      width:20%;
+      @include flex-center();
+      margin-right:8%;
+      margin-left:5%;
+    }
+
+    &__search-all-container{
+      display:flex;
+      margin-left:4%;
+      width:30%;
+      height:63%;
+   }
+ 
+     &__search-container{
+       @include flex-center();
+       border:1px solid silver;
+       border-radius:5px;
+       color:#FAFAFA;
+       background-color:#FAFAFA;
+       width:100%;
+       margin-right:4%;
+     }
+     &__search-box{
+       background-color:#FAFAFA;
+       border:none;
+       font-size:1.1rem;
+       width:80%;
+     }
+
+      &__upload-profile-pic-container{
+      display:flex;
+      width:30%;
+      justify-content: flex-start;
+      height:63%;      
+      align-items: center;
+
+      } 
+
+      &__upload-button{
+          width:60%;
+          height:100%;
+          @include flex-center();
+          background-color:$brainBlue;
+          padding:7%;
+          font-size:1.0rem;
+          font-weight:400;
+          border-radius:4px;
+          color:white;
+          margin-right:7%;
+      }
+
+      &__profile-pic-container{
+          @include flex-center();
+          width:25%;
+      }
+
+      &__profile-pic{
+          height:48px;
+          width:48px;
+          border:1px solid transparent;
+          border-radius:50%;
+          margin-bottom:5%;
+          
+        }
+
+        &__search-icon{
+          margin-right:3%;
+          margin-left:5%;
+        }
+    }
+}
+
+@include laptop-small(){
+  .header{
+    display:flex;
+    width:100%;
+    height:100px;
+    align-items:center;
+
+    &__logo-container{
+      height:90px;
+      width:20%;
+      @include flex-center();
+      margin-right:20%;
+      margin-left:5%;
+    }
+    &__search-all-container{
+      display:flex;
+      margin-left:4%;
+      width:40%;
+      height:70%;
+   }
+    &__search-container{
+      @include flex-center();
+      border:1px solid silver;
+      border-radius:5px;
+      color:#FAFAFA;
+      background-color:#FAFAFA;
+      width:100%;
+      margin-right:24px;
+    }
+    &__search-box{
+      background-color:#FAFAFA;
+      border:none;
+      font-size:1.1rem;
+      width:80%;
+    }
+    &__upload-profile-pic-container{
+      display:flex;
+      height:100%;
+      width:33%;
+      justify-content: flex-start;
+      align-items: center;
+    } 
+    &__upload-button{
+      height:70%;
+      width:37%;
+      @include flex-center();
+      background-color:$brainBlue;
+      padding:5%;
+      font-size:1.0rem;
+      font-weight:400;
+      border-radius:5px;
+      margin-right:3%;
+      color:white;
+    }
+    &__profile-pic-container{
+        @include flex-center();
+        width:30%;
+    }
+    &__profile-pic{
+        height:56px;
+        width:56px;
+        border:1px solid transparent;
+        border-radius:50%;
+        margin-bottom:5%;   
+      }
+    &__search-icon{
+      margin-right:3%;
+      margin-left:5%;
+    }
+  }
+}
+@include laptop-up(){
+  .header{
+    display:flex;
+    width:100%;
+    height:100px;
+    align-items:center;
+
+    &__logo-container{
+      height:90px;
+      width:20%;
+      @include flex-center();
+      margin-right:20%;
+      margin-left:5%;
+    }
+    &__search-all-container{
+      display:flex;
+      margin-left:4%;
+      width:40%;
+      height:70%;
+   }
+    &__search-container{
+      @include flex-center();
+      border:1px solid silver;
+      border-radius:5px;
+      color:#FAFAFA;
+      background-color:#FAFAFA;
+      width:100%;
+      margin-right:24px;
+    }
+    &__search-box{
+      background-color:#FAFAFA;
+      border:none;
+      font-size:1.1rem;
+      width:80%;
+    }
+    &__upload-profile-pic-container{
+      display:flex;
+      height:100%;
+      width:33%;
+      justify-content: flex-start;
+      align-items: center;
+    } 
+    &__upload-button{
+      height:70%;
+      width:37%;
+      @include flex-center();
+      background-color:$brainBlue;
+      padding:5%;
+      font-size:1.0rem;
+      font-weight:400;
+      border-radius:5px;
+      margin-right:3%;
+      color:white;
+    }
+    &__profile-pic-container{
+        @include flex-center();
+        width:30%;
+    }
+    &__profile-pic{
+        height:56px;
+        width:56px;
+        border:1px solid transparent;
+        border-radius:50%;
+        margin-bottom:5%;   
+      }
+    &__search-icon{
+      margin-right:3%;
+      margin-left:5%;
+    }
+  }
+}

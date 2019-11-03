@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import './styles/mixinsVars.scss';
-import Header from './components/header.js'
+import Header from './components/header/header.js'
 import VideoDisplay from './components/videoDisplay/videoDisplay.js'
 import VideoInfo from './components/videoInfo/videoInfo.js';
 import CommentInput from './components/commentInput/commentInput.js';

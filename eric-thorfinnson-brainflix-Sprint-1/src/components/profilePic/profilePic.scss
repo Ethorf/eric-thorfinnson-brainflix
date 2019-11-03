@@ -14,6 +14,22 @@
     }
 }
 
+@include tablet-small(){
+
+    .profile-pic{
+        // border:1px solid black;
+        display:flex;
+        width:5%;
+        margin-right:3%;
+    }
+    .profile-pic__display{
+
+        border-radius: 50%;
+        height:39px;
+        width:39px;
+    }
+}
+
 @include tablet-only(){
 
     .profile-pic{
@@ -31,6 +47,18 @@
 }
 
 
+@include laptop-small(){
+
+    .profile-pic{
+        display:flex;
+        width:5%;
+    }
+    .profile-pic__display{
+        border-radius: 50%;
+        height:45px;
+        width:45px;
+    }
+}
 @include laptop-up(){
 
     .profile-pic{

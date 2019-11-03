@@ -4,7 +4,6 @@
 .videoInfo{
 
     @include mobile-only(){
-
         display:flex;
         max-width: 100%;
         flex-wrap:wrap;
@@ -15,35 +14,29 @@
             width:100%;
             margin-bottom:16px;
         }
-
         &__title{
             width:90%;
             font-size:1.4rem;
             text-align: left;
         }
-
         &__authour-date-container{
             display:flex;
             align-items: center;
             width:100%;
             margin-bottom:32px;
         }
-
         &__authour{
             margin-right:8px;
         }
-
         &__date{
             margin-top:1%;
             color:$labelFontColour;
         }
-        
         &__views-likes-container{
             display:flex;
             width:100%;
             margin-bottom:24px;
         }
-
         &__views-icon{
             margin-right:8px;
         }
@@ -53,28 +46,90 @@
             font-size:1.1rem;
             font-weight:300;
         }
-
         &__likes-icon{
             margin-right:8px;
         }
-
         &__likes-number{
             margin-right:4%;
             font-size:1.1rem;
             font-weight:300;
         }
-
         &__description{
             margin-top:24px;
             text-align:left;
             margin-bottom:40px;
         }
-
-        
     }
-
 }
 
+.videoInfo{
+    @include tablet-small(){
+
+        display:flex;
+        max-width: 100%;
+        flex-wrap:wrap;
+        margin:2px 2% 40px 3%;
+
+        &__title-container{
+            align-self: flex-start;
+            width:100%;
+            margin-top:48px;
+            margin-bottom:24px;
+        }
+        &__title{
+            width:90%;
+            font-size:2.1rem;
+            font-weight:800;
+            text-align: left;
+        }
+        &__authour-date-likes-views-container{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            margin-bottom:24px;
+        }
+        &__authour-date-container{
+            display:flex;
+            align-items: center;
+            width:50%;
+        }
+        &__authour{
+            margin-right:8px;
+        }
+        &__date{
+            margin-top:1%;
+            color:$labelFontColour;
+        }
+        &__views-likes-container{
+            display:flex;
+            justify-content: flex-end;
+            width:40%;
+        }
+        &__views-icon{
+            margin-right:8px;
+            margin-left:3%;
+        }
+        &__views-number{
+            margin-right:3%;
+            font-size:1.1rem;
+            font-weight:300;
+        }
+        &__likes-icon{
+            margin-right:8px;
+        }
+        &__likes-number{
+            margin-right:4%;
+            font-size:1.1rem;
+            font-weight:300;
+        }
+        &__description{
+            margin-top:40px;
+            text-align:left;
+            margin-bottom:40px;
+        }   
+    }
+}
 .videoInfo{
     @include tablet-only(){
 
@@ -143,10 +198,8 @@
         }   
     }
 }
-
 .videoInfo{
-    @include laptop-up(){
-
+    @include laptop-small(){
         display:flex;
         width: 85%;
         flex-wrap:wrap;
@@ -158,14 +211,12 @@
             margin-top:48px;
             margin-bottom:24px;
         }
-
         &__title{
             width:90%;
             font-size:2.1rem;
             font-weight:800;
             text-align: left;
         }
-
         &__authour-date-likes-views-container{
             width:100%;
             display:flex;
@@ -180,22 +231,86 @@
             align-items: center;
             width:50%;
             margin-right:1%;
-
-
-
         }
-
         &__authour{
             margin-right:1%;
         }
-
         &__date{
             margin-top:1%;
             margin-right:1%;
-
             color:$labelFontColour;
         }
+        &__views-likes-container{
+            display:flex;
+            justify-content: flex-end;
+            width:40%;
+        }
+        &__views-icon{
+            margin-right:2%;
+            margin-left:2%;
+        }
+        &__views-number{
+            margin-right:4%;
+            font-size:1.1rem;
+            font-weight:300;
+        }
+        &__likes-icon{
+            margin-right:6px;
+        }
+        &__likes-number{
+            margin-right:5%;
+            font-size:1.1rem;
+            font-weight:300;
+        }
+        &__description{
+            margin-top:40px;
+            text-align:left;
+            margin-bottom:40px;
+        }        
+    }
+}
+.videoInfo{
+    @include laptop-up(){
+        display:flex;
+        width: 85%;
+        flex-wrap:wrap;
+        margin:2px 0px 40px 12%;
         
+        &__title-container{
+            align-self: flex-start;
+            width:100%;
+            margin-top:48px;
+            margin-bottom:24px;
+        }
+        &__title{
+            width:90%;
+            font-size:2.1rem;
+            font-weight:800;
+            text-align: left;
+        }
+        &__authour-date-likes-views-container{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            margin-bottom:24px;
+            padding-bottom:24px;
+            border-bottom:1px solid silver;
+        }
+        &__authour-date-container{
+            display:flex;
+            align-items: center;
+            width:50%;
+            margin-right:1%;
+        }
+        &__authour{
+            margin-right:1%;
+        }
+        &__date{
+            margin-top:1%;
+            margin-right:1%;
+            color:$labelFontColour;
+        }
         &__views-likes-container{
             display:flex;
             justify-content: flex-end;
@@ -205,31 +320,24 @@
         &__views-icon{
             margin-right:2%;
             margin-left:2%;
-
         }
-
         &__views-number{
             margin-right:1%;
             font-size:1.1rem;
             font-weight:300;
         }
-
         &__likes-icon{
             margin-right:8px;
         }
-
         &__likes-number{
             margin-right:4%;
             font-size:1.1rem;
             font-weight:300;
         }
-
         &__description{
             margin-top:40px;
             text-align:left;
             margin-bottom:40px;
-        }
-
-        
+        }        
     }
 }
