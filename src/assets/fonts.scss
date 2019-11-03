@@ -1,0 +1,54 @@
+
+@font-face{
+    font-family:"avenir";
+    src:url("../assets/_Global Font/AvenirNextProLT/Linotype - AvenirNextLTPro-Regular.otf") format("opentype");
+    font-weight:400;
+  }
+  
+  @font-face{
+    font-family:"avenir";
+    src:url("../assets/_Global Font/AvenirNextProLT/Linotype - AvenirNextLTPro-Demi.otf") format("opentype");
+    font-weight:700;
+  }
+  
+  @font-face{
+    font-family:"avenir";
+    src:url("../assets/_Global Font/AvenirNextProLT/Linotype - AvenirNextLTPro-Bold.otf") format("opentype");
+    font-weight:800;
+  }
+  
+  @font-face{
+    font-family:"avenir";
+    src:url("../assets/_Global Font/AvenirNextProLT/Linotype - AvenirNextLTPro-Light.otf") format("opentype");
+    font-weight:300;
+  }
+  
+  @font-face{
+    font-family:"roboto";
+    src:url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+  }
+  
+  html {
+      box-sizing: border-box;
+      margin:0 auto;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+      }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+  }
+  
+  body{
+    font-family:"avenir","roboto",sans-serif;
+    margin:0;
+  }
+  textarea{ 
+  
+  resize: none;
+  
+  }

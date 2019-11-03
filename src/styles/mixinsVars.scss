@@ -1,0 +1,68 @@
+
+$tablet-max:768px;
+$mobile-max:425px;
+$tablet-small-min:426px;
+$tablet-small-max:560px;
+$laptop-small-max:1128px;
+$brainBlue:#0095FF;
+$brainDarkBlue:#0065AD;
+$labelFontSize:12px;
+$labelFontColour:#AFAFAF;
+$dividerColour:#004892;
+$mobileParaCommentSize:14px;
+$mobile-only: "screen and (max-width: #{$mobile-max})";
+$tablet-small: "screen and (min-width:#{$tablet-small-min} ) and (max-width: #{$tablet-small-max})";
+$tablet-only: "screen and (min-width:#{$tablet-small-max}) and (max-width: #{$tablet-max})";
+$laptop-up:"screen and (min-width: #{$laptop-small-max +1 })";
+$laptop-small:"screen and (min-width: #{$tablet-max +1 }) and (max-width: #{$laptop-small-max})";
+
+
+
+@mixin mobile-only(){
+  @media #{$mobile-only}{
+    @content;
+  }
+}
+@mixin tablet-small(){
+  @media #{$tablet-small}{
+    @content;
+  }
+}  
+@mixin tablet-only(){
+  @media #{$tablet-only}{
+    @content;
+  }
+}
+@mixin laptop-small(){
+  @media #{$laptop-small}{
+    @content;
+  }
+} 
+@mixin laptop-up(){
+  @media #{$laptop-up}{
+    @content;
+  }
+} 
+
+
+@mixin flex-center(){
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+html {
+    box-sizing: border-box;
+    margin:0 auto;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+    }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
